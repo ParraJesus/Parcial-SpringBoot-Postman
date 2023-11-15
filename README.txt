@@ -1,7 +1,7 @@
 Para poder ejecutar la api , es necesario configurar mysql , se debe tener
 instalado mysql , un usuario llamado mercado_valores_dev con una contraseña 
 1234 , tambien es necesario crear el schema de la base de datos en mysql ,
-para ello es necesario las siguientes lienas de codigo en mysql:
+para ello es necesario las siguientes lineas de codigo en mysql:
 
 create database MercadoValores;
 use accionesMercadoValores;
