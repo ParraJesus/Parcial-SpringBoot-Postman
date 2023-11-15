@@ -28,15 +28,7 @@ public class AccionControlador {
         return new ResponseEntity<>(servicio.obtenerAcciones(),HttpStatus.FOUND);
     }
 
-    @GetMapping({"accion/obtenerPrecios"})
-    public ResponseEntity<HashMap<String,Double>> obtenerPrecios(){
-        return new ResponseEntity<>(servicio.obtenerPreciosAcciones(),HttpStatus.FOUND);
-    }
 
-    @GetMapping({"accion/obtenerPrecio/{id}"})
-    public ResponseEntity<String> obtenerPrecio(@Valid @PathVariable(name = "id") Long id){
-        return new ResponseEntity<>(servicio.obtenerValorActualAccion(id),HttpStatus.OK);
-    }
 
     @GetMapping({"accion/obtener/{id}"})
     public ResponseEntity<Accion> obtenerAccion(@Valid @PathVariable(name = "id") Long id){

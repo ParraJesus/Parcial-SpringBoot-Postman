@@ -182,87 +182,6 @@
 					]
 				},
 				{
-					"name": "CambiarPrecioAccion",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/accion/actualizarPrecio/1?precio=100000",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"accion",
-								"actualizarPrecio",
-								"1"
-							],
-							"query": [
-								{
-									"key": "precio",
-									"value": "100000"
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "CambiarPrecioAccion",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/accion/actualizarPrecio/1?precio=100000",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"accion",
-										"actualizarPrecio",
-										"1"
-									],
-									"query": [
-										{
-											"key": "precio",
-											"value": "100000"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 13 Nov 2023 17:11:32 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=60"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"idAccion\": 1,\n    \"nombreAccion\": \"Davivienda\",\n    \"precioActual\": 100000,\n    \"precioAnterior\": 224640,\n    \"umbralSuperior\": 220000,\n    \"umbralInferior\": 10000\n}"
-						}
-					]
-				},
-				{
 					"name": "EliminarAccion",
 					"request": {
 						"method": "DELETE",
@@ -399,142 +318,6 @@
 					]
 				},
 				{
-					"name": "ObtenerPrecioAccion",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/accion/obtenerPrecio/3",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"accion",
-								"obtenerPrecio",
-								"3"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "ObtenerPrecioAccion",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/accion/obtenerPrecio/3",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"accion",
-										"obtenerPrecio",
-										"3"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "plain",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "text/plain;charset=UTF-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "42"
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 13 Nov 2023 17:07:14 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=60"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "Accion: Bancolombia Precio Actual: 70000.0"
-						}
-					]
-				},
-				{
-					"name": "ObtenerPrecios",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/accion/obtenerPrecios",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"accion",
-								"obtenerPrecios"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "ObtenerPrecios",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8080/accion/obtenerPrecios",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"accion",
-										"obtenerPrecios"
-									]
-								}
-							},
-							"status": "Found",
-							"code": 302,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 13 Nov 2023 17:06:39 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=60"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"id: 2 BBVA\": 110000,\n    \"id: 1 Davivienda\": 187200,\n    \"id: 3 Bancolombia\": 70000\n}"
-						}
-					]
-				},
-				{
 					"name": "ObtenerAccion",
 					"request": {
 						"method": "GET",
@@ -600,6 +383,87 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"idAccion\": 1,\n    \"nombreAccion\": \"Davivienda\",\n    \"precioActual\": 187200,\n    \"precioAnterior\": 156000,\n    \"umbralSuperior\": 200000,\n    \"umbralInferior\": 10000\n}"
+						}
+					]
+				},
+				{
+					"name": "ActualizarPrecioAccion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/accion/actualizarPrecio/1?precio=100000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accion",
+								"actualizarPrecio",
+								"1"
+							],
+							"query": [
+								{
+									"key": "precio",
+									"value": "100000"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ActualizarPrecioAccion",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/accion/actualizarPrecio/1?precio=100000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"accion",
+										"actualizarPrecio",
+										"1"
+									],
+									"query": [
+										{
+											"key": "precio",
+											"value": "100000"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Nov 2023 00:53:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"idAccion\": 1,\n    \"nombreAccion\": \"Davivienda\",\n    \"precioActual\": 100000,\n    \"precioAnterior\": 323481.6,\n    \"umbralSuperior\": 363000,\n    \"umbralInferior\": 10000\n}"
 						}
 					]
 				}

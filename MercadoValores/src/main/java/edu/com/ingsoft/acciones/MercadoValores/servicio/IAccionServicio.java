@@ -38,19 +38,6 @@ public interface IAccionServicio {
     public Accion obtenerAccionPorId(Long id);
 
     /**
-     * @brief Busca una accion por su id
-     * @param id de la accion a buscar
-     * @return el precio de la accion
-     */
-    public String obtenerValorActualAccion(Long id);
-
-    /**
-     * @brief Obtiene todas las acciones junto a su precio actual
-     * @return una hashmap que contendra la informacion
-     */
-    public HashMap<String,Double> obtenerPreciosAcciones();
-
-    /**
      * @brief Busca una accion por su id y modifica su precio actual
      * @param id de la accion a modificar el precio
      * @param precio el nuevo precio de la accion

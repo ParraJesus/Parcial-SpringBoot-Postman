@@ -52,30 +52,6 @@ public class AccionServicioImp implements IAccionServicio {
         return a;
     }
 
-    @Override
-    public String obtenerValorActualAccion(Long id) {
-        Accion a = repositorio.findById(id).orElseThrow(()
-                -> new ResourceNotFoundException("Accion","id",id));
-        String info = "Accion: " + a.getNombreAccion()
-                + " Precio Actual: " + a.getPrecioActual();
-        aumentarPrecios();
-
-        return info;
-    }
-
-    @Override
-    public HashMap<String,Double> obtenerPreciosAcciones() {
-        HashMap<String,Double> map = new HashMap<>();
-        repositorio.findAll().forEach(
-                accion -> {
-                    map.put("id: "+ accion.getIdAccion()+
-                            " "+ accion.getNombreAccion()
-                            ,accion.getPrecioActual());
-                    });
-        aumentarPrecios();
-
-        return map;
-    }
 
     @Override
     public void removerAccion(Long id) {
