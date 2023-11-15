@@ -8,3 +8,8 @@ use accionesMercadoValores;
 
 Link para crear usuarios en MYSQL
 https://www.youtube.com/live/xo1Y4h6t-yM?si=3YKXC4Y248bUR_4F
+
+Para ir a la documentacion con swagger, primero es necesario ejecutar la api y despues
+ir al siguiente link:
+
+http://localhost:8080/swagger-ui/index.html
